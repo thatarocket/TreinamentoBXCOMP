@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Desafio2{
+public class Etapa0_Desafio2{
 
     public static void main(String[] args){
 
