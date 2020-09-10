@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class BxCompDesafio3 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num = input.nextInt();
+        String nomes[] = new String [num+1];
+        for(int i = 0; i < nomes.length; i+=1){
+            String valor = input.nextLine();
+            nomes[i] = valor;
+        }
+        // verificando
+        for(int j = 1; j < nomes.length ; j++){
+            String arrayAux[] = nomes[j].split(" ");
+            System.out.print(arrayAux[arrayAux.length-1].toUpperCase()+ ",");
+            for(int i = 0; i <arrayAux.length-1 ; i++){
+                String palavra = arrayAux[i];
+                palavra = palavra.substring(0, 1).toUpperCase();
+                System.out.print(palavra+".");
+                
+            }
+            System.out.println();
+        }
+    }
+    
+}
