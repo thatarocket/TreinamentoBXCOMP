@@ -16,6 +16,7 @@ public class Desafio {
         System.out.println("Insira o resultado do teste GADO"); //Tirar depois de testar
  
         int dano = 0;
+        int[] prints = new int[num];
         
         for(int i = 0; i < num; i++) {
             
@@ -30,18 +31,26 @@ public class Desafio {
                 
             }
             
-            if (dano != 0) {
-                System.out.println("Dano de nivel " + dano);
-            }
-            
-            else {
-                System.out.println("O combustivel nao possui dano");
-            }
+            prints[i] = dano;
             
             dano = 0;
             
         }
         
-    }
+        for (int y = 0; y < num; y++) {
+            
+        
+            if (prints[y] != 0) {
+                
+                System.out.println("Dano de nivel " + prints[y]);
+            }
+            
+            else {
+                System.out.println("O combustivel nao possui dano");
+            }
     
+         }
+    
+    }
+
 }
